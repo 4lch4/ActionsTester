@@ -6,7 +6,7 @@ jobs:
    name: A test job for for testing my actions.
    steps:
      - name: Hello World
-       uses: 4lch4/flat-act@v0.2.0
+       uses: 4lch4/flat-act@v0.2.1
        with:
          who-to-greet: 4lch4
      - name: Get the output time
