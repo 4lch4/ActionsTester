@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  hello_world:
+   runs-on: ubuntu-20.04
+   name: A test job for for testing my actions.
+   steps:
+     - name: Hello World
+       uses: 4lch4/flat-act@v0.2.0
+       with:
+         who-to-greet: 4lch4
+     - name: Get the output time
+       run: echo "The time was ${{ steps.hello.outputs.time }}"
